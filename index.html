@@ -4,7 +4,6 @@
 <title>CGL Guide 2026 — SSC CGL Syllabus, Marks, Category Cut-off &amp; Vacancies</title>
 <style>
 :root{--bg:#f6f7fb;--cd:#fff;--tx:#141a29;--mu:#5a6579;--bd:#e1e5ef;--a:#2b4fe0;--b:#e0342b;--c:#e68a00;--g:#12915a;--p:#7a45d1;--k:#d1175f;--t:#0a7f9e;--nv:#0f1b4d;box-sizing:border-box}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1220;--cd:#171f31;--tx:#edf1f9;--mu:#a3aec3;--bd:#2b3650;--nv:#0a0f22}}
 :root[data-theme="dark"]{--bg:#0d1220;--cd:#171f31;--tx:#edf1f9;--mu:#a3aec3;--bd:#2b3650;--nv:#0a0f22}
 html{scroll-padding-top:70px;scroll-behavior:smooth}
 *{box-sizing:border-box}
@@ -64,6 +63,7 @@ h3.t{margin:26px 0 8px;font-size:18px}
 .obw{display:flex;align-items:center;gap:10px;font-size:14px}.obw i{display:block;height:9px;border-radius:5px;background:var(--b)}
 .tips{margin:6px 0 0;padding-left:20px}.tips li{margin:6px 0}
 .pdfbox{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;background:var(--cd);border:1px solid var(--bd);border-left:6px solid var(--b);border-radius:16px;padding:16px 18px;margin-bottom:16px}.pdfbox p{margin:2px 0 0;font-size:14px;color:var(--mu)}.pdfbox .btn{margin:0;background:var(--b);color:#fff}.tgp{display:inline-block;border-radius:999px;padding:2px 10px;font-size:12px;font-weight:800;color:#fff;background:var(--a);margin-bottom:6px}.tgp.r{background:var(--g)}.card a.go{display:inline-block;margin-top:8px;font-weight:700;color:var(--a);text-decoration:none}.th{position:relative;display:block;aspect-ratio:16/9;border-radius:12px;overflow:hidden;margin-bottom:10px;text-decoration:none;color:#fff;background:linear-gradient(135deg,var(--g1),var(--g2))}
+.pdfbox p.pdfmeta{font-size:12px;line-height:1.45;margin-top:7px}
 .th .pl{position:absolute;left:50%;top:50%;width:58px;height:58px;margin:-29px 0 0 -29px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.35)}
 .th .pl:after{content:"";margin-left:5px;border-left:19px solid #d1175f;border-top:12px solid transparent;border-bottom:12px solid transparent}
 .th .rk{position:absolute;left:10px;top:10px;background:rgba(0,0,0,.55);border-radius:8px;padding:3px 10px;font-weight:800;font-size:13px}
@@ -108,7 +108,7 @@ footer .cp{border-top:1px solid rgba(255,255,255,.15);margin-top:20px;padding-to
 
 <main class="c">
 <section id="syl"><div class="eb">Section 1</div><h2 class="s">Syllabus</h2><p class="lead">Expand a subject to see its topics. “Added from official notice” marks extra topics listed by SSC. Tier 2 Maths is Matriculation level, English is 10+2, and Papers II and III are graduation level.</p>
-<div class="pdfbox"><div><b>Official syllabus: SSC CGL 2026 Notice (132 pages)</b><p>Published on ssc.gov.in, 21 May 2026. Scheme of exam: Para 13 (pages 25 to 29). Tier 1 syllabus: Para 13.10 (pages 30 to 31). Tier 2 syllabus: Para 13.11 (pages 31 to 36). Minimum qualifying marks: Para 16.1 (page 41).</p><p>The official syllabus is the final authority. It lists a few items not in the topic lists below, for example statistics and probability under Tier 2 Maths, and critical thinking, emotional intelligence and social intelligence under Reasoning.</p></div><a class="btn" href="https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2026.pdf" target="_blank" rel="noopener">Open official PDF</a></div>
+<div class="pdfbox"><div><b>Official syllabus: SSC CGL 2026 Notice (132 pages)</b><p class="pdfmeta">Published on ssc.gov.in, 21 May 2026. Scheme of exam: Para 13 (pages 25 to 29). Tier 1 syllabus: Para 13.10 (pages 30 to 31). Tier 2 syllabus: Para 13.11 (pages 31 to 36). Minimum qualifying marks: Para 16.1 (page 41).</p><p class="pdfmeta">The official syllabus is the final authority. It lists a few items not in the topic lists below, for example statistics and probability under Tier 2 Maths, and critical thinking, emotional intelligence and social intelligence under Reasoning.</p></div><a class="btn" href="https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2026.pdf" target="_blank" rel="noopener">Open official PDF</a></div>
 
 <div class="tabs"><button class="on" data-s="1">Tier 1</button><button data-s="2">Tier 2</button></div>
 <div id="syl-list"></div></section>
@@ -205,5 +205,5 @@ function otb(k){var t=document.getElementById('otb');if(k==='a'){t.innerHTML='<t
 k=+k;var L=D.filter(function(r){return r[k+1]>0}).sort(function(a,b){return b[k+1]-a[k+1]}),lo=Math.min.apply(0,col(k));t.innerHTML='<tr><th>Post ('+L.length+' posts)</th><th>'+CA[k]+' marks</th></tr>'+L.map(function(r){return'<tr><td>'+r[0]+'</td><td><div class="obw"><b>'+r[k+1]+'</b><i style="width:'+Math.max(6,(r[k+1]-lo)*2.2)+'px"></i></div></td></tr>'}).join('')}
 otb('a');
 document.querySelectorAll('[data-k]').forEach(function(b){b.onclick=function(){document.querySelectorAll('[data-k]').forEach(function(x){x.classList.remove('on')});b.classList.add('on');otb(b.dataset.k)}});
-var tg=document.getElementById('tg');tg.onclick=function(){var r=document.documentElement,d=r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme:dark)').matches);r.dataset.theme=d?'light':'dark';tg.textContent=d?'\u263E':'\u2600'};
+var tg=document.getElementById('tg');tg.onclick=function(){var r=document.documentElement,d=r.dataset.theme==='dark';r.dataset.theme=d?'light':'dark';tg.textContent=d?'\u263E':'\u2600'};
 </script></body></html>
