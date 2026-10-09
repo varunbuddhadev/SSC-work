@@ -78,6 +78,7 @@ footer .cp{border-top:1px solid rgba(255,255,255,.15);margin-top:20px;padding-to
 @media(max-width:640px){.logo span{display:none}.hero{padding:38px 0 60px}.tabs button{padding:8px 12px}}
 </style><style>
 #top5 .th{isolation:isolate;width:100%;min-height:0;border:1px solid rgba(255,255,255,.3);border-radius:14px;box-shadow:0 8px 20px rgba(15,27,77,.22);background:radial-gradient(ellipse at 78% 24%,rgba(255,255,255,.28),transparent 34%),linear-gradient(135deg,var(--g1),var(--g2))}
+#top5 .grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
 #top5 .th:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.5;background:repeating-linear-gradient(135deg,transparent 0 15px,rgba(255,255,255,.12) 16px 17px,transparent 18px 31px),radial-gradient(circle at 78% 70%,rgba(255,255,255,.34) 0 2px,transparent 3px);background-size:auto,18px 18px}
 #top5 .th .rk,#top5 .th .bg,#top5 .th .du{z-index:2;box-shadow:0 2px 8px rgba(0,0,0,.2)}
 #top5 .th .rk{left:12px;top:12px;border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(6px)}
@@ -98,7 +99,7 @@ footer .cp{border-top:1px solid rgba(255,255,255,.15);margin-top:20px;padding-to
 <nav class="menu"><a href="#syl">Syllabus</a><a href="#pat">Pattern</a><a href="#time">Time per Q</a><a href="#obc">Category Marks</a><a href="#comp">Vacancies</a><a href="#dest">DEST</a><a href="#top5">Toppers</a></nav>
 <button id="tg" aria-label="Toggle theme">&#9790;</button></div></header>
 
-<div class="hero" id="top"><div class="c"><span class="tag">Tier 1 + Tier 2 · Updated Oct 2026</span>
+<div class="hero" id="top"><div class="c"><span class="tag">Tier 1 + Tier 2 · Updated 9 Oct 2026</span>
 <h1>SSC CGL 2026 <em>Complete Syllabus</em> &amp; Exam Guide</h1>
 <p>Full syllabus, marking scheme, time per question, UR / OBC / EWS / SC / ST marks and vacancies in one clean place.</p>
 <a class="btn b1" href="#syl">View Syllabus</a><a class="btn b2" href="#obc">Category Marks</a><a class="btn b2" href="https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2026.pdf" target="_blank" rel="noopener">Official Notice PDF</a></div></div>
@@ -106,7 +107,7 @@ footer .cp{border-top:1px solid rgba(255,255,255,.15);margin-top:20px;padding-to
 <div class="stats"><div class="c"><div class="g"><div><b>100</b><small>Tier 1 questions</small></div><div><b>200</b><small>Tier 1 marks</small></div><div><b>450</b><small>Tier 2 Paper I marks</small></div><div><b>12,256</b><small>2026 vacancies (tentative)</small></div></div></div></div>
 
 <main class="c">
-<section id="syl"><div class="eb">Section 1</div><h2 class="s">Syllabus</h2><p class="lead">Tap a subject to open its topics. Groups named "Added from official notice" come from Para 13.10 and 13.11 of the official PDF. Tier 2 Maths is Matriculation level, Tier 2 English is 10+2 level, and Papers II and III are graduation level.</p>
+<section id="syl"><div class="eb">Section 1</div><h2 class="s">Syllabus</h2><p class="lead">Expand a subject to see its topics. “Added from official notice” marks extra topics listed by SSC. Tier 2 Maths is Matriculation level, English is 10+2, and Papers II and III are graduation level.</p>
 <div class="pdfbox"><div><b>Official syllabus: SSC CGL 2026 Notice (132 pages)</b><p>Published on ssc.gov.in, 21 May 2026. Scheme of exam: Para 13 (pages 25 to 29). Tier 1 syllabus: Para 13.10 (pages 30 to 31). Tier 2 syllabus: Para 13.11 (pages 31 to 36). Minimum qualifying marks: Para 16.1 (page 41).</p><p>The official syllabus is the final authority. It lists a few items not in the topic lists below, for example statistics and probability under Tier 2 Maths, and critical thinking, emotional intelligence and social intelligence under Reasoning.</p></div><a class="btn" href="https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2026.pdf" target="_blank" rel="noopener">Open official PDF</a></div>
 
 <div class="tabs"><button class="on" data-s="1">Tier 1</button><button data-s="2">Tier 2</button></div>
@@ -115,7 +116,8 @@ footer .cp{border-top:1px solid rgba(255,255,255,.15);margin-top:20px;padding-to
 <section id="pat"><div class="eb">Section 2</div><h2 class="s">Exam Pattern</h2><p class="lead">Questions, marks, time and negative marking.</p>
 <div class="tabs"><button class="on" data-t="t1">Tier 1</button><button data-t="t2">Tier 2 Paper I</button><button data-t="t3">Paper II &amp; III</button></div>
 <div class="sc" id="tbl"></div>
-<p class="note">Pattern as reported for the 2026 cycle (sectional timing is new). Confirm every figure on the official notification at ssc.gov.in.</p></section>
+<p class="note">Pattern as reported for the 2026 cycle (sectional timing is new). Confirm every figure on the official notification at ssc.gov.in.</p>
+<p class="note"><b>About topic-wise weightage:</b> SSC publishes marks by section, not topic, and topic counts vary by shift. Use 3–5 years of papers to spot trends; fixed topic-weightage charts are only estimates.</p></section>
 
 <section id="time"><div class="eb">Section 3</div><h2 class="s">Marks &amp; Time Per Question</h2><p class="lead">Know what each question is worth and how many seconds you get.</p>
 <div class="grid" id="cards"></div>
@@ -154,9 +156,6 @@ footer .cp{border-top:1px solid rgba(255,255,255,.15);margin-top:20px;padding-to
 </div>
 <p class="note">Video covers use YouTube's actual thumbnail images and open the matching video. Article covers are custom-designed and open the published story.</p></section>
 
-<section id="tips"><div class="eb">Section 8</div><h2 class="s">About Topic-wise Weightage</h2>
-<div class="card" style="--c:var(--p)"><p style="margin-top:0">SSC publishes marks per section, not per topic. Questions per topic change every shift and year, so a fixed topic-wise table would be a guess.</p>
-<ul class="tips"><li>Use the section marks above as your official weightage.</li><li>Tally 3 to 5 years of previous-year papers to rank topics by frequency.</li><li>Practise with a sectional timer, since each section is timed on its own.</li><li>Tier 2 Paper I has −1 for each wrong answer, so skip true guesses there.</li></ul></div></section>
 </main>
 
 <footer><div class="c"><div class="f"><div><b>CGL Guide 2026</b><br>A study guide for SSC CGL aspirants.</div><div><b>Jump to</b><br><a href="#syl">Syllabus</a> · <a href="#pat">Pattern</a> · <a href="#obc">Category Marks</a> · <a href="#comp">Vacancies</a> · <a href="#top5">Toppers</a></div><div><b>Official source</b><br><a href="https://ssc.gov.in">ssc.gov.in</a> · <a href="https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2026.pdf" target="_blank" rel="noopener">CGL 2026 Notice PDF</a></div></div>
